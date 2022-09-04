@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body a:hover{
+    text-decoration: none;
+    color: #000;
+    scroll-behavior: smooth;
 }
 /* <!-- HEADER --> */
 nav{
@@ -67,7 +74,7 @@ nav{
 .latest-slider-section{
     margin: 20px 0;
     background-color: maroon;
-    padding: 15px 5px;
+    padding: 25px 10px;
 }
 .latest-slider-section h4{
     color: #fff;
@@ -77,20 +84,17 @@ nav{
     position: relative;
     display: flex;
     max-width: 100%;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
-    gap: 25px;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
+    gap: 15px;
 }
 .latest-slider-item img{
-    width: 200px;
-    height: 150px;
+    width: 220px;
+    /* height: 200px; */
 }
 .latest-slider-item{
     position: relative;
-    width: 200px;
+    width: 220px;
     height: 150px;
 }
 .latest-slider-item .latest--item-text{
@@ -104,6 +108,96 @@ nav{
 }
 /* <!-- TOP NEWS SLIDER --> */
 
+/* <!-- FOOTBALL SECTION --> */
+.football--section{
+    margin: 20px;
+}
+.football--section a{
+    text-decoration: none;
+    color: #000;
+}
+.football-news-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.caption{
+    padding: 10px;
+}
+.football-news-item-large{
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.football-news-item-large img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+.football-aside img{
+    width: 200px;
+    /* height: 80px; */
+}
+.football-news-item-small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+ 
+.football--section h4{
+    height: 30px;
+    border-left: 5px solid maroon;
+}
+/* <!-- FOOTBALL SECTION --> */
+
+/* OUR PICKS */
+.quick-picks--section{
+    margin: 20px;
+}
+.quick-picks--section a{
+    text-decoration: none;
+    color: #000;
+}
+.quick-picks--section a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.quick--picks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.daily--picks h4{
+    border-bottom: 2px solid maroon;
+}
+/* OUR PICKS */
+
+/* <!-- FOOTER --> */
+.footer--item a{
+    display: block;
+    padding: 10px 5px;
+}
+.footer--section{
+    margin: 20px;
+    /* text-align: center; */
+}
+.footer--section a{
+    text-decoration: none;
+    color: #000;
+}
+.footer--section a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.footer-items{
+    display: flex;
+}
+.footer--text{
+    text-align: center;
+}
+/* <!-- FOOTER --> */
 
 
 
@@ -125,6 +219,37 @@ nav{
 /* SMALL SCREEN */
 @media(max-width:767px){
     .latest-news-section{
+        flex-wrap: wrap;
+    }
+
+    .latest-slider-items{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scroll-margin: none;
+        scrollbar-color: maroon;
+        scrollbar-width: 0;
+    }
+    .latest-slider-item img{
+        width: 200px;
+        /* height: 200px; */
+    }
+    .latest-slider-section{
+        padding: 10px 10px;
+    }
+    .football-news-items{
+        flex-wrap: wrap;
+    }
+    .football-aside img{
+        width: 150px;
+        /* height: 100px; */
+    }
+    .quick--picks{
+        flex-wrap: wrap;
+    }
+    .footer-items{
         flex-wrap: wrap;
     }
 }
