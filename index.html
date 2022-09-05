@@ -6,20 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Qatar Sports Live</title>
     <link rel="stylesheet" href="./index.css" />
-    <!-- BOOTSTRAP LIBRARY -->
+    <!-- SWIPERJS LIBRARY -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- BOOTSTRAP LIBRARY -->
+    <!-- SWIPERJS LIBRARY -->
 
     <!-- FONTAWESOME 5 LIBRARY -->
-    <script
-      src="https://kit.fontawesome.com/2534799483.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- FONTAWESOME 5 LIBRARY -->
   </head>
   <body>
@@ -27,11 +25,11 @@
     <header>
       <nav>
         <div class="humberger">
-          <i class="fas fa-bars"></i>
+          <i class="fa fa-bars"></i>
         </div>
         <div class="news-logo">QSPORTSLIVE</div>
         <div class="search-bar">
-          <i class="fas fa-search"></i>
+          <i class="fa fa-search"></i>
         </div>
       </nav>
     </header>
@@ -43,8 +41,28 @@
         <div class="top--search">
           <h4 style="width: 10%">TOP</h4>
           <div class="marque--content">
-            <marquee behavior="scroll" direction="left" scrollamount="12">
-              This is a sample scrolling text that has scrolls texts to left.
+            <marquee behavior="scroll" direction="left" scrollamount="5">
+              <p>
+                <span class="marquee-dates">15 Sept 2022</span
+                ><a href="#" class="marquee-link-items"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Odit, possimus.</a
+                >
+              </p>
+              <p>
+                <span class="marquee-dates">15 Sept 2022</span
+                ><a href="#" class="marquee-link-items"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Odit, possimus.</a
+                >
+              </p>
+              <p>
+                <span class="marquee-dates">15 Sept 2022</span
+                ><a href="#" class="marquee-link-items"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Odit, possimus.</a
+                >
+              </p>
             </marquee>
           </div>
         </div>
@@ -53,75 +71,110 @@
 
       <!-- LATEST NEWS SECTION -->
       <section class="latest-news-section">
-        <div class="container">
-          <!-- <h2>Carousel Example</h2> -->
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li
-                data-target="#myCarousel"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
-            </ol>
+        <!-- Swiper -->
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="./images/qsl2.jpg" alt="NEWS" style="width: 100%" />
-                <div class="caption">
-                  <h4><li>FOOTBALL</li></h4>
-                  <h5>
-                    <a href="#">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Fuga voluptas ea vero perferendis dolorum laudantium
-                      labore ex quos distinctio. Aliquam?
-                    </a>
-                  </h5>
-                  <p class="news-timer">
-                    <i class="fa fa-clock-o"></i> 14 Sept 2022
-                  </p>
-                </div>
-              </div>
-
-              <div class="item">
-                <img src="./images/qsl3.jpg" alt="NEWS" style="width: 100%" />
-                <div class="caption">
-                  <h4><li>RACING</li></h4>
-                  <h5>
-                    <a href="#">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      In maxime suscipit, odio rerum a itaque unde minima quam
-                      nesciunt voluptatum!
-                    </a>
-                  </h5>
-                  <p class="news-timer">
-                    <i class="fa fa-clock-o"></i>16 Sept 2022
-                  </p>
-                </div>
-              </div>
-
-              <div class="item">
-                <img src="./images/qsl4.jpg" alt="NEWS" style="width: 100%" />
-                <div class="caption">
-                  <h4><li>VOLLEY BALL</li></h4>
-                  <h5>
-                    <a href="#">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Minus, blanditiis enim. Excepturi odio ratione enim
-                      quibusdam alias voluptas ipsam consequatur?
-                    </a>
-                  </h5>
-                  <p class="news-timer">
-                    <i class="fa fa-clock-o"></i>16 Sept 2022
-                  </p>
-                </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/qsl2.jpg" alt="" />
+              <div class="caption">
+                <h5>
+                  <a href="#">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga voluptas ea vero perferendis dolorum laudantium labore
+                    ex quos distinctio. Aliquam?
+                  </a>
+                </h5>
+                <p class="news-timer">
+                  <i class="fa fa-clock-o"></i> 14 Sept 2022
+                </p>
               </div>
             </div>
+            <div class="swiper-slide">
+              <img src="./images/qsl3.jpg" alt="" />
+              <div class="caption">
+                <h5>
+                  <a href="#">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga voluptas ea vero perferendis dolorum laudantium labore
+                    ex quos distinctio. Aliquam?
+                  </a>
+                </h5>
+                <p class="news-timer">
+                  <i class="fa fa-clock-o"></i> 14 Sept 2022
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/qsl4.jpg" alt="" />
+              <div class="caption">
+                <h5>
+                  <a href="#">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga voluptas ea vero perferendis dolorum laudantium labore
+                    ex quos distinctio. Aliquam?
+                  </a>
+                </h5>
+                <p class="news-timer">
+                  <i class="fa fa-clock-o"></i> 14 Sept 2022
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/qsl5.jpg" alt="" />
+              <div class="caption">
+                <h5>
+                  <a href="#">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga voluptas ea vero perferendis dolorum laudantium labore
+                    ex quos distinctio. Aliquam?
+                  </a>
+                </h5>
+                <p class="news-timer">
+                  <i class="fa fa-clock-o"></i> 14 Sept 2022
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/qsl2.jpg" alt="" />
+              <div class="caption">
+                <h5>
+                  <a href="#">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga voluptas ea vero perferendis dolorum laudantium labore
+                    ex quos distinctio. Aliquam?
+                  </a>
+                </h5>
+                <p class="news-timer">
+                  <i class="fa fa-clock-o"></i> 14 Sept 2022
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/qsl3.jpg" alt="" />
+              <div class="caption">
+                <h5>
+                  <a href="#">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga voluptas ea vero perferendis dolorum laudantium labore
+                    ex quos distinctio. Aliquam?
+                  </a>
+                </h5>
+                <p class="news-timer">
+                  <i class="fa fa-clock-o"></i> 14 Sept 2022
+                </p>
+              </div>
+            </div>
+            <!-- <div class="swiper-slide">
+                    </div> -->
+            <!-- <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div> -->
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
+        <!-- Swiper -->
 
         <!-- ASIDE NEWS SECTION -->
         <div class="aside-news-links">
@@ -179,17 +232,20 @@
 
             <hr />
 
-            <!-- <div class="col-1">
-                <div class="aside-item">
-                  <img src="./images/qsl4.jpg" alt="">
-                <p><a href="#">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ex possimus nesciunt quod quaerat fuga!
-                </a></p>
-                </div>
-                <p class="news-timer">
-                    <i class="fa fa-clock-o"></i> 28 March 2022
+            <div class="col-1">
+              <div class="aside-item">
+                <img src="./images/qsl4.jpg" alt="" />
+                <p>
+                  <a href="#">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi ex possimus nesciunt quod quaerat fuga!
+                  </a>
                 </p>
-            </div> -->
+              </div>
+              <p class="news-timer">
+                <i class="fa fa-clock-o"></i> 28 March 2022
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -825,5 +881,9 @@
       </section>
       <!-- FOOTER -->
     </main>
+    <!-- SWIPERJS LIBRARY -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- SWIPERJS LIBRARY -->
+    <script src="./index.js"></script>
   </body>
 </html>
