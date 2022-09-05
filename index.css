@@ -225,6 +225,52 @@ marquee p a:hover{
 }
 /* OUR PICKS */
 
+
+/* HORSE RACING */
+.horse--racing-section{
+    margin: 20px;
+}
+.horse--racing-section a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.caption-racing h4{
+    color: #fff;
+}
+.caption-racing{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.horse--racing-section a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.horse--racing-section .news-timer{
+    color: #fff;
+}
+.horse--racing-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.horse--racing-items img{
+    width: 100%;
+}
+.horse-news-item-large{
+    position: relative;
+}
+
+
+.horse-news-item-large .caption-racing{
+    position: absolute;
+    bottom: 5px;
+    padding: 15px;
+}
+/* HORSE RACING */
+
 /* <!-- FOOTER --> */
 .footer--item a{
     display: block;
@@ -302,6 +348,19 @@ marquee p a:hover{
     }
     .quick--picks{
         flex-wrap: wrap;
+    }
+
+    .horse--racing-items{
+        flex-wrap: wrap;
+    }
+    .horse--racing-section a{
+        font-size: 10px;
+    }
+    .horse--racing-section .news-timer{
+        font-size: 8px;
+    }
+    .horse-news-item-large .caption-racing{
+        padding: 8px;
     }
     .footer-items{
         flex-wrap: wrap;
